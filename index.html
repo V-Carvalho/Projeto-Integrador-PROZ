@@ -1,96 +1,101 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Integrador - Adote</title>
+    <title>Projeto Integrador - Home</title>
   </head>
   <body>
-    <header id="header">
-      <!--Vai ficar escondido essa frase com CSS, está aqui somente para ser o título dentro do body do site semanticamente-->
-      <h1>Instituto LAVHEC</h1>
-      <img src="src/img/logo.png" alt="logo Instituto LAVHEC" />
+    <header id="header" style="background-color: #27a8ad; color: #fff; width: 1000px; margin-bottom: 20px;">
+      <img src="src/img/logo.png" width="250" style="margin: 20px 0px 10px 20px;" />
+      <nav style="background-color: #348588; height: 30px; padding-top: 10px;">
+        <a href="index.html" style="color: #fff; margin-left: 30px;">Home</a>
+        <a href="#" style="color: #fff; margin-left: 40px;">Adote</a>
+        <a href="#" style="color: #fff; margin-left: 40px;">Doação</a>
+        <a href="src/perdidosachados/index.html" style="color: #fff; margin-left: 40px;">Perdidos e Achados</a>
+        <a href="#" style="color: #fff; margin-left: 40px;">Quem Somos</a>
+      </nav>
     </header>
 
-    <nav>
-      <a href="#">Home</a> | <a href="/css/">Adote</a> |
-      <a href="#">Doação</a> | <a href="/python/">Achados e Perdidos</a> |
-      <a href="#">Quem Somos</a>
-    </nav>
-
     <main>
-      <img
-        src="/src/img/bg-title-adote.jpg"
-        alt="Fundo do título da página"
-        width="500"
-      />      
+      <img src="/src/img/banner1000.png" width="1000"/>
 
       <section>
-        <h2>Cachorros e Gatos para adoção</h2>
-        
-        <label for="pets">Filtar por:</label>
-        <select name="pets" id="pets">
-          <option value="cachorros">Cachorros</option>
-          <option value="gatos">gatos</option>
-        </select>
-      </section>
+        <h1 style="margin-left: 20px;">Adotar</h1>
+        <div style="display: inline-block; margin-left: 20px; line-height: 10%;">
+          <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="300" />
+        </div>
+        <div style="display: inline-block; margin-left: 25px; line-height: 10%;">
+          <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="300" />
+        </div>
+        <div style="display: inline-block; margin-left: 25px; line-height: 10%;">
+          <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="300" />
+        </div>
+    </section>
 
-      <section>
-        <img
-          src="/src/img/pet1.jpg"
-          alt="Detalhes do animal"
-          width="300"
-          height="300"
-        />
-        <p>Nome: Mel</p>
-        <p>Sexo: Femea</p>
-        <p>Tamanho: Médio</p>
-        <p>Idade: 1 Anos</p>
-      </section>
-
-      <section>
-        <img
-          src="/src/img/pet2.jpg"
-          alt="Detalhes do animal"
-          width="300"
-          height="300"
-        />
-        <p>Nome: Max</p>
-        <p>Sexo: Macho</p>
-        <p>Tamanho: Médio</p>
-        <p>Idade: 2 Anos</p>
-      </section>
-
-      <section>
-        <img
-          src="/src/img/pet3.jpg"
-          alt="Detalhes do animal"
-          width="300"
-          height="300"
-        />
-        <p>Nome: Pingo</p>
-        <p>Sexo: Macho</p>
-        <p>Tamanho: Pequeno</p>
-        <p>Idade: 6 Meses</p>
-      </section>
-    </main>
-
-    <footer>
-      <div>
-        <img src="src/img/logo-footer.png" alt="logo Instituto LAVHEC rodapé" style="background-color: blue"> <!--ATENÇÃO!!! Só ajustei esse fundo azul para ilustrar a logo, pois ela é branca!-->
+    <section>
+      <h1 style="margin-left: 20px;">Perdidos</h1>
+      <div style="display: inline-block; margin-left: 20px; line-height: 10%;">
+        <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="300" />
       </div>
-  
-      <nav>
-        <h2>Menu</h2>
-        <a href="#">Home</a> | <a href="#">Adote</a> |
-        <a href="#">Doação</a> | <a href="#">Achados e Perdidos</a> |
-        <a href="#">Quem Somos</a>        
-      </nav>
-  
-      <div>
-        <p>&copy; Copyright - Projeto Integrador - Grupo 6</p>
-        <a href="#header">Voltar para o topo &uarr;</a>
+      <div style="display: inline-block; margin-left: 25px; line-height: 10%;">
+        <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="300" />
+      </div>
+      <div style="display: inline-block; margin-left: 25px; line-height: 10%;">
+        <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="300" />
+      </div>
+  </section>
+
+    <section>
+      <h1 style="margin-left: 20px;">Achados</h1>
+      <div style="display: inline-block; margin-left: 20px; line-height: 10%;">
+        <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="300" />
+      </div>
+      <div style="display: inline-block; margin-left: 25px; line-height: 10%;">
+        <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="300" />
+      </div>
+      <div style="display: inline-block; margin-left: 25px; line-height: 10%;">
+        <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="300" />
+      </div>
+  </section>
+
+  </main>
+
+    <footer style="background-color: #27a8ad; color: #fff; width: 1000px; margin-top: 20px;">
+      <div style="height: 140px;">
+        <div style="display: inline-block;">
+          <img src="src/img/logo-footer.png" width="250" style=" margin-left: 20px; margin-bottom: 10px;"/>
+        </div>
+        <div style="display: inline-block; margin-left: 450px;">
+          <div>
+            <h3>Menu</h3>
+          </div>
+          <div>
+            <div  style="display: inline-block;">
+              <div>
+                <a href="index.html]" style="color: #fff;">Home</a>
+                <a href="src/perdidosachados/index.html" style="color: #fff; margin-left: 50px;">Perdidos e Achados</a>
+              </div>
+              <div style="margin-top: 5px;">
+                <a href="#" style="color: #fff;">Adote</a>
+                <a href="#" style="color: #fff; margin-left: 50px;">Quem Somos</a>
+              </div>
+              <div style="margin-top: 5px;">
+                <a href="#" style="color: #fff;">Doação</a>
+              </div>
+            </div>
+          </div>
+        </div>    
+      </div>
+
+      <div style="background-color: #348588; height: 50px;">
+        <div style="display: inline-block;">
+          <p style="margin-left: 20px;">&copy; Copyright - Projeto Integrador - Grupo 6</p>
+        </div>
+        <div style="display: inline-block; margin-left: 500px;">
+          <a href="#header" style="color: #fff; margin-left: 20px;">Voltar para o topo ☝</a>
+        </div>
       </div>
     </footer>
   </body>
