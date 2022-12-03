@@ -15,4 +15,4 @@
 * 
 
 ## 🌐 Link do projeto :
-* [Projeto Integrador PROZ](https://projeto-integrador-proz-g6.up.railway.app/)
+* [Projeto Integrador PROZ](https://projeto-integrador-proz-l-dev.up.railway.app/)
