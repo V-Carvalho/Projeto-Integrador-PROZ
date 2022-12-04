@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/src/css/header-footer.css">
     <title>Doação - Instituto LAVHEC</title>
 </head>
 <body>
   <header id="header">
-    <h1>Instituto LAVHEC</h1> <!--Vai ficar escondido essa frase com CSS, está aqui somente para ser o título dentro do body do site semanticamente-->
-    <img src="/src/img/logo.png" alt="logo Instituto LAVHEC">
+    <h1>Instituto LAVHEC</h1>
+    <div>
+      <img src="/src/img/logo.png" alt="logo Instituto LAVHEC">
+    </div>
 
     <nav>
-      <h2>Menu</h2> <!--Também vai sumir com CSS-->
-      <ul> <!--No CSS vou tirar as bolinhas e deixar elas alinhada em uma linha só-->
+      <h2>Menu</h2>
+      <ul>
         <li><a href="/">Home</a></li>
         <li><a href="/adote/">Adote</a></li>
         <li><a href="/perdidos-e-achados/">Perdidos e Achados</a></li>
-        <li><a href="#">Doação</a></li>
+        <li><a href="#" class="current-page">Doação</a></li>
         <li><a href="/quem-somos/">Quem Somos</a></li>
       </ul>
     </nav>
@@ -51,24 +54,28 @@
   </main>
 
   <footer>
-    <div>
-      <img src="/src/img/logo-footer.png" alt="logo Instituto LAVHEC rodapé" style="background-color: blue"> <!--ATENÇÃO!!! Só ajustei esse fundo azul para ilustrar a logo, pois ela é branca!-->
+    <div id="footer">
+      <img src="/src/img/logo-footer.png" alt="logo Instituto LAVHEC rodapé">
+      
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <div>
+            <li><a href="/">Home</a></li>
+            <li><a href="/adote/">Adote</a></li>
+            <li><a href="/perdidos-e-achados/">Perdidos e Achados</a></li>
+          </div>
+          <div>
+            <li><a href="#header">Doação</a></li>
+            <li><a href="/quem-somos/">Quem Somos</a></li>
+          </div>
+        </ul>
+      </nav>
     </div>
-
-    <nav>
-      <h2>Menu</h2>
-      <ul> <!--No CSS vou tirar as bolinhas e encaixar num canto como ficou no figma-->
-        <li><a href="/">Home</a></li>
-        <li><a href="/adote/">Adote</a></li>
-        <li><a href="/perdidos-e-achados/">Perdidos e Achados</a></li>
-        <li><a href="#header">Doação</a></li>
-        <li><a href="/quem-somos/">Quem Somos</a></li>
-      </ul>
-    </nav>
-
-    <div>
-      <p>&copy; Copyright - Projeto Integrador - Grupo 6</p>
-      <a href="#header">Voltar para o topo &uarr;</a>
+      
+    <div id="credits">
+      <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank">&copy; Copyright - Projeto Integrador - Grupo 6</a>
+      <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
     </div>
   </footer>
 </body>
