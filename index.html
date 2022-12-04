@@ -1,147 +1,209 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto Integrador - Home</title>
-  </head>
-  <body>
-    <header
-      id="header"
-      style="
-        background-color: #27a8ad;
-        color: #fff;
-        width: 1000px;
-        margin-bottom: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      "
-    >
-      <img
-        src="src/img/logo.png"
-        width="250"
-        style="margin: 20px 0px 10px 20px"
-      />
-      <nav style="background-color: #348588; height: 30px; padding-top: 10px">
-        <a href="index.html" style="color: #fff; margin-left: 30px">Home</a>
-        <a href="#" style="color: #fff; margin-left: 40px">Adote</a>
-        <a href="#" style="color: #fff; margin-left: 40px">Doação</a>
-        <a
-          href="src/perdidosachados/index.html"
-          style="color: #fff; margin-left: 40px"
-          >Perdidos e Achados</a
-        >
-        <a
-          href="src/perdidosachados2/index.html"
-          style="color: #fff; margin-left: 40px"
-          >Perdidos e Achados 2</a
-        >
-        <a href="#" style="color: #fff; margin-left: 40px">Quem Somos</a>
-      </nav>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/styles.css">
+
+    <title>Instituto LAVHEC</title>
+</head>
+<body>
+
+    <header id="header">
+        <div class="container">
+            <div class="wrapper1">
+                <a href="">
+                    <img src="./assets/logo.png" alt="">
+                </a>
+            </div>
+            <div class="wrapper2">
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="">Home</a>
+                        </li>
+                        <li>
+                            <a href="">Adote</a>
+                        </li>
+                        <li>
+                            <a href="">Doação</a>
+                        </li>
+                        <li>
+                            <a href="">Perdidos e Achados</a>
+                        </li>
+                        <li>
+                            <a href="">Quem Somos</a>
+                        </li>
+                    </ul>
+                </nav>
+                <!--
+                    <div class="area-login">
+                        <a href="">Login</a>
+                    <button>Entrar</button>
+                    </div>
+                -->
+            </div>
+        </div>
     </header>
 
-    <main style="width: 1000px; margin-left: auto; margin-right: auto">
-      <img src="/src/img/banner1000.png" width="1000" />
-
-      <section style="width: 940px; margin-left: auto; margin-right: auto">
-        <h1>Adotar</h1>
-        <div style="display: inline-block; line-height: 10%">
-          <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-        <div style="display: inline-block; line-height: 10%; margin-left: 15px">
-          <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-        <div style="display: inline-block; line-height: 10%; margin-left: 15px">
-          <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-      </section>
-
-      <section style="width: 940px; margin-left: auto; margin-right: auto">
-        <h1>Perdidos</h1>
-        <div style="display: inline-block; line-height: 10%">
-          <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-        <div style="display: inline-block; line-height: 10%; margin-left: 15px">
-          <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-        <div style="display: inline-block; line-height: 10%; margin-left: 15px">
-          <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-      </section>
-
-      <section style="width: 940px; margin-left: auto; margin-right: auto">
-        <h1>Achados</h1>
-        <div style="display: inline-block; line-height: 10%">
-          <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-        <div style="display: inline-block; line-height: 10%; margin-left: 15px">
-          <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-        <div style="display: inline-block; line-height: 10%; margin-left: 15px">
-          <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="300" />
-        </div>
-      </section>
-    </main>
-
-    <footer
-      style="
-        background-color: #27a8ad;
-        color: #fff;
-        width: 1000px;
-        margin-top: 20px;
-        margin-left: auto;
-        margin-right: auto;
-      "
-    >
-      <div style="height: 140px">
-        <div style="display: inline-block">
-          <img
-            src="src/img/logo-footer.png"
-            width="250"
-            style="margin-left: 20px; margin-bottom: 10px"
-          />
-        </div>
-        <div style="display: inline-block; margin-left: 450px">
-          <div>
-            <h3>Menu</h3>
-          </div>
-          <div>
-            <div style="display: inline-block">
-              <div>
-                <a href="index.html]" style="color: #fff">Home</a>
-                <a
-                  href="src/perdidosachados/index.html"
-                  style="color: #fff; margin-left: 50px"
-                  >Perdidos e Achados</a
-                >
-              </div>
-              <div style="margin-top: 5px">
-                <a href="#" style="color: #fff">Adote</a>
-                <a href="#" style="color: #fff; margin-left: 50px"
-                  >Quem Somos</a
-                >
-              </div>
-              <div style="margin-top: 5px">
-                <a href="#" style="color: #fff">Doação</a>
-              </div>
+    <section class="s-hero">
+        <div class="container">
+            <div class="wrapper">
+                <div class="banner">
+                    <img src="./assets/bg-title-perdidosachados2.jpg" alt="">
+                </div>
+                <div class="area-pets">
+                    <div>
+                        <h1>Perdidos</h1>
+                    </div>
+                    <div class="area-pets-row">
+                        <div>
+                            <img src="./assets/perdidos/perdido1.png" alt="" />
+                            <p>Nome: Mel</p>
+                            <p>Sexo: Femea</p>
+                            <p>Tamanho: Médio</p>
+                            <p>Idade: 1 Anos</p>
+                        </div>
+                        <div>
+                            <img src="./assets/perdidos/perdido2.png" alt="" />
+                            <p>Nome: Max</p>
+                            <p>Sexo: Macho</p>
+                            <p>Tamanho: Médio</p>
+                            <p>Idade: 2 Anos</p>
+                        </div>
+                        <div>
+                            <img src="./assets/perdidos/perdido3.png" alt="" />
+                            <p>Nome: Pingo</p>
+                            <p>Sexo: Macho</p>
+                            <p>Tamanho: Pequeno</p>
+                            <p>Idade: 6 Meses</p>
+                        </div>
+                    </div>
+                    <div class="area-pets-row">
+                        <div>
+                            <img src="./assets/perdidos/perdido4.png" alt="" />
+                            <p>Nome: Mel</p>
+                            <p>Sexo: Femea</p>
+                            <p>Tamanho: Médio</p>
+                            <p>Idade: 1 Anos</p>
+                        </div>
+                        <div>
+                            <img src="./assets/perdidos/perdido5.png" alt="" />
+                            <p>Nome: Max</p>
+                            <p>Sexo: Macho</p>
+                            <p>Tamanho: Médio</p>
+                            <p>Idade: 2 Anos</p>
+                        </div>
+                        <div>
+                            <img src="./assets/perdidos/perdido6.png" alt="" />
+                            <p>Nome: Pingo</p>
+                            <p>Sexo: Macho</p>
+                            <p>Tamanho: Pequeno</p>
+                            <p>Idade: 6 Meses</p>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
 
-      <div style="background-color: #348588; height: 50px">
-        <div style="display: inline-block">
-          <p style="margin-left: 20px">
-            &copy; Copyright - Projeto Integrador - Grupo 6
-          </p>
+            <div class="area-pets">
+                <div>
+                    <h1>Achados</h1>
+                </div>
+                <div class="area-pets-row">
+                    <div>
+                        <img src="./assets/achados/achado1.png" alt="" />
+                        <p>Nome: Mel</p>
+                        <p>Sexo: Femea</p>
+                        <p>Tamanho: Médio</p>
+                        <p>Idade: 1 Anos</p>
+                    </div>
+                    <div>
+                        <img src="./assets/achados/achado2.png" alt="" />
+                        <p>Nome: Max</p>
+                        <p>Sexo: Macho</p>
+                        <p>Tamanho: Médio</p>
+                        <p>Idade: 2 Anos</p>
+                    </div>
+                    <div>
+                        <img src="./assets/achados/achado3.png" alt="" />
+                        <p>Nome: Pingo</p>
+                        <p>Sexo: Macho</p>
+                        <p>Tamanho: Pequeno</p>
+                        <p>Idade: 6 Meses</p>
+                    </div>
+                </div>
+                <div class="area-pets-row">
+                    <div>
+                        <img src="./assets/achados/achado4.png" alt="" />
+                        <p>Nome: Mel</p>
+                        <p>Sexo: Femea</p>
+                        <p>Tamanho: Médio</p>
+                        <p>Idade: 1 Anos</p>
+                    </div>
+                    <div>
+                        <img src="./assets/achados/achado5.png" alt="" />
+                        <p>Nome: Max</p>
+                        <p>Sexo: Macho</p>
+                        <p>Tamanho: Médio</p>
+                        <p>Idade: 2 Anos</p>
+                    </div>
+                    <div>
+                        <img src="./assets/achados/achado6.png" alt="" />
+                        <p>Nome: Pingo</p>
+                        <p>Sexo: Macho</p>
+                        <p>Tamanho: Pequeno</p>
+                        <p>Idade: 6 Meses</p>
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div style="display: inline-block; margin-left: 500px">
-          <a href="#header" style="color: #fff; margin-left: 20px"
-            >Voltar para o topo ☝</a
-          >
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="wrapper">
+                <div>
+                    <img src="./assets/logo-footer.png" />
+                </div>
+                <div>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="">Home</a>
+                            </li>
+                            <li>
+                                <a href="">Adote</a>
+                            </li>
+                            <li>
+                                <a href="">Doação</a>
+                            </li>
+                            <li>
+                                <a href="">Perdidos e Achados</a>
+                            </li>
+                            <li>
+                                <a href="">Quem Somos</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
-      </div>
-    </footer>
-  </body>
+        <div id="copyright-top" class="wrapper">
+            <div>
+                <p>&copy; Copyright - Projeto Integrador - Grupo 6</p>
+            </div>
+            <div >
+                <a href="#header">Voltar para o topo <img src="./assets/pra-cima.png" alt=""></a>
+            </div>
+        </div>
+</footer>
+
+</body>
 </html>
