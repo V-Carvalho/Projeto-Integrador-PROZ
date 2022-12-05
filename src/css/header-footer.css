@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -24,6 +26,7 @@ header ul {
     background: #27A8AD;
     display: flex;
     justify-content: space-evenly;
+    font-size: large;
 }
 
 header li {
