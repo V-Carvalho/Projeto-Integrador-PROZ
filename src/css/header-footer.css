@@ -15,7 +15,7 @@ header div {
     height: 220px;
     display: flex;
     align-items: center;
-    background: rgba(0, 0, 0, 0.5) url("/src/img/bg-header.jpg") center 80%;
+    background: rgba(0, 0, 0, 0.3) url("/src/img/bg-header.jpg") center 80%;
     background-size: cover;
     background-blend-mode: multiply;
 }
