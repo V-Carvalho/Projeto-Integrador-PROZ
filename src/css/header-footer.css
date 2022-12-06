@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+}
+
+h1, header h2 {
+    display: none;
+}
+
+header div {
+    height: 220px;
+    display: flex;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3) url("/src/img/bg-header.jpg") center 80%;
+    background-size: cover;
+    background-blend-mode: multiply;
+}
+
+header ul {
+    background: #27A8AD;
+    display: flex;
+    justify-content: space-evenly;
+    font-size: large;
+}
+
+header li {
+    display: flex;
+}
+
+header li a {
+    padding: 1rem;
+}
+
+.current-page {
+    background: #348588;
+}
+
+.current-page:hover {
+    background-color: transparent;
+}
+
+header a, footer, footer a {
+    color: white;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #B65826
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem 1rem 0;
+}
+
+#footer {
+    background: #27A8AD;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 266px;
+    margin: 0 -1rem;
+    padding: 0 1rem;
+}
+
+footer nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+}
+
+footer ul {
+    display: flex;
+    gap: 1rem;
+}
+
+footer ul div {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#credits {
+    background: #348588;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 -1rem;
+    padding: 10px 1rem;
+}
+
+#credits a:last-child {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+footer span:last-child {
+    font-size: xx-large;
+}
