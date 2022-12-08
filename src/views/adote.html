@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/src/css/adote.css" />
     <title>Adote - Instituto LAVHEC</title>
   </head>
-  <body onload="loadData('all')">
+  <body onload="loadData()">
     <header id="header">
       <h1>Instituto LAVHEC</h1>
       <div>
@@ -43,11 +43,11 @@
           <h5>Filtrar Por:</h5>
         </div>
         <div class="filter-animal-type-buttons">
-          <button class="btn active" onclick="loadData('all')">
+          <button class="btn active" onclick="getAllAnimals()">
             Mostar Todos
           </button>
-          <button class="btn" onclick="loadData('dog')">Cachorros</button>
-          <button class="btn" onclick="loadData('cat')">Gatos</button>
+          <button class="btn" onclick="getDataAnimalsFilteredSorted('dog')">Cachorros</button>
+          <button class="btn" onclick="getDataAnimalsFilteredSorted('cat')">Gatos</button>
         </div>
       </section>
 
