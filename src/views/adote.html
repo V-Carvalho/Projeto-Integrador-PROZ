@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/header-footer.css" />
+    <link rel="stylesheet" href="/src/css/adote.css" />
+    <title>Adote - Instituto LAVHEC</title>
+  </head>
+  <body onload="loadData('all')">
+    <header id="header">
+      <h1>Instituto LAVHEC</h1>
+      <div>
+        <img src="/src/img/logo.png" alt="logo Instituto LAVHEC" />
+      </div>
+
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#" class="current-page">Adote</a></li>
+          <li>
+            <a href="/src/views/perdidos-e-achados.html">Perdidos e Achados</a>
+          </li>
+          <li><a href="/src/views/doacao.html">Doação</a></li>
+          <li><a href="/src/views/quem-somos.html">Quem Somos</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="banner-page-title">
+        <h3>Cachorros e Gatos para adoção!</h3>
+      </section>
+
+      <!-- <section class="page-subtitle"> 
+        <h4>Cachorros e Gatos para adoção!</h4>
+      </section> -->
+
+      <section class="filter-animal-type">
+        <div class="filter-animal-type-text">
+          <h5>Filtrar Por:</h5>
+        </div>
+        <div class="filter-animal-type-buttons">
+          <button class="btn active" onclick="loadData('all')">
+            Mostar Todos
+          </button>
+          <button class="btn" onclick="loadData('dog')">Cachorros</button>
+          <button class="btn" onclick="loadData('cat')">Gatos</button>
+        </div>
+      </section>
+
+      <section class="animals-main-content">
+        <ul id="listAnimals" class="list-animals">
+          <!-- <li class="item-list-animals">
+            <div class="card">
+              <img
+                src="https://images.dog.ceo/breeds/terrier-norfolk/n02094114_1745.jpg"
+                class="animal-picture"
+              />
+              <div class="animal-details">
+                <h4 id="animalName"><b>Max</b></h4>
+                <p id="age">2 Anos</p>
+                <p id="gender">Macho</p>
+              </div>
+            </div>
+          </li> -->
+        </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div id="footer">
+        <img
+          src="/src/img/logo-footer.png"
+          alt="logo Instituto LAVHEC rodapé"
+        />
+
+        <nav>
+          <h2>Menu</h2>
+          <ul>
+            <div>
+              <li><a href="/">Home</a></li>
+              <li><a href="#header">Adote</a></li>
+              <li>
+                <a href="/src/views/perdidos-e-achados.html"
+                  >Perdidos e Achados</a
+                >
+              </li>
+            </div>
+            <div>
+              <li><a href="/src/views/doacao.html">Doação</a></li>
+              <li><a href="/src/views/quem-somos.html">Quem Somos</a></li>
+            </div>
+          </ul>
+        </nav>
+      </div>
+
+      <div id="credits">
+        <a
+          href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ"
+          target="_blank"
+          >&copy; Copyright - Projeto Integrador - Grupo 6</a
+        >
+        <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
+      </div>
+    </footer>
+
+    <script src="../js/adote.js"></script>
+  </body>
+</html>
