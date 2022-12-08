@@ -66,16 +66,27 @@ h5 {
   align-items: center;
 }
 
-.btn.active {
+.btn-all-animals {
+  border: none;
+  cursor: pointer;
   color: #FFFFFF;
-  font-weight: bold;
+  font-weight: bold;  
   border-radius: 5px;
-  background-color: #27A8AD;  
+  padding: 10px 15px; 
+  background-color: #27A8AD;
+    
 }
 
-.btn.active:hover {
+.btn-all-animals:active {
   color: #B65826;
   font-weight: bold;
+  transform: translateY(4px);
+  box-shadow: 0 5px #CB8A67;  
+}
+
+.btn-all-animals:hover {
+  color: #B65826;
+  font-weight: bold;  
 }
 
 .btn {
@@ -86,6 +97,13 @@ h5 {
   border-radius: 5px;
   padding: 10px 15px;  
   background-color: #D9D9D9;  
+}
+
+.btn:active {
+  color: #000000;
+  font-weight: bold;
+  transform: translateY(4px);
+  box-shadow: 0 5px #CB8A67;  
 }
 
 .btn:hover {
