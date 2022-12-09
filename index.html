@@ -11,11 +11,19 @@
 <body>
   <header id="header">
     <h1>Instituto LAVHEC</h1>
-    <div>
+    <div id="logo">
       <img src="src/img/logo.png" alt="logo Instituto LAVHEC">
     </div>
 
     <nav>
+      <div id="menu-hamburguer">
+        <input type="checkbox" name="checkbox-menu" id="checkbox-menu">
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
       <h2>Menu</h2>
       <ul>
         <li><a href="#">Home</a></li>
@@ -32,7 +40,7 @@
       <img src="src/img/banner-home.jpg" alt="Banner do Site">
     </section>
 
-    <section>
+    <section class="content-home">
       <h3><a href="src/views/adote.html">Adotar</a></h3>
       <ul>
         <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
@@ -41,7 +49,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="content-home">
       <h3><a href="src/views/perdidos-e-achados.html">Perdidos</a></h3>
       <ul>
         <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
@@ -50,7 +58,7 @@
       </ul>
     </section>
 
-    <section>
+    <section class="content-home">
       <h3><a href="src/views/perdidos-e-achados.html">Achados</a></h3>
       <ul>
         <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
@@ -81,7 +89,7 @@
     </div>
       
     <div id="credits">
-      <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank">&copy; Copyright - Projeto Integrador - Grupo 6</a>
+      <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank" rel="noopener noreferrer">&copy; Copyright - Projeto Integrador - Grupo 6</a>
       <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
     </div>
   </footer>
