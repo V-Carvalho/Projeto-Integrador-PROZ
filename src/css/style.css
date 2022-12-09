@@ -1,0 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+h3 {
+    border-bottom: 2px solid;
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+
+h3 a {
+    color: black;
+}
+
+main ul {
+    display: flex;
+    gap: 5rem;
+}
