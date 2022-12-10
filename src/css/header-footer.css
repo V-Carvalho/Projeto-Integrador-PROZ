@@ -122,6 +122,14 @@ footer span:last-child {
         flex-direction: column;
         gap: 1.5rem;
     }
+
+    header a:hover, footer a:hover {
+        color: white;
+    }
+
+    main a:hover {
+        color: black;
+    }
 }
 
 @media (max-width: 750px) {
@@ -149,7 +157,11 @@ footer span:last-child {
     }
 
     header ul {
-        display: none;
+        display: block;
+        position: absolute;
+        top: 280px;
+        left: -1000px;
+        transition: 0.3s ease-in-out;
     }
 
     header label {

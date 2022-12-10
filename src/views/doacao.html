@@ -5,16 +5,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/src/css/header-footer.css">
+    <script src="/src/js/script.js"></script>
     <title>Doação - Instituto LAVHEC</title>
 </head>
 <body>
   <header id="header">
     <h1>Instituto LAVHEC</h1>
-    <div>
+    <div id="logo">
       <img src="/src/img/logo.png" alt="logo Instituto LAVHEC">
     </div>
 
     <nav>
+      <div id="menu-hamburguer">
+        <input type="checkbox" name="checkbox-menu" id="checkbox-menu" onclick="isChecked()">
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
       <h2>Menu</h2>
       <ul>
         <li><a href="/">Home</a></li>
