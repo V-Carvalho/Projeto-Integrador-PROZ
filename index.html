@@ -1,209 +1,98 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="/styles.css">
-
-    <title>Instituto LAVHEC</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="src/css/header-footer.css">
+  <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/script.js"></script>
+  <title>Instituto LAVHEC</title>
 </head>
 <body>
+  <header id="header">
+    <h1>Instituto LAVHEC</h1>
+    <div id="logo">
+      <img src="src/img/logo.png" alt="logo Instituto LAVHEC">
+    </div>
 
-    <header id="header">
-        <div class="container">
-            <div class="wrapper1">
-                <a href="">
-                    <img src="./assets/logo.png" alt="">
-                </a>
-            </div>
-            <div class="wrapper2">
-                <nav>
-                    <ul>
-                        <li>
-                            <a href="">Home</a>
-                        </li>
-                        <li>
-                            <a href="">Adote</a>
-                        </li>
-                        <li>
-                            <a href="">Doação</a>
-                        </li>
-                        <li>
-                            <a href="">Perdidos e Achados</a>
-                        </li>
-                        <li>
-                            <a href="">Quem Somos</a>
-                        </li>
-                    </ul>
-                </nav>
-                <!--
-                    <div class="area-login">
-                        <a href="">Login</a>
-                    <button>Entrar</button>
-                    </div>
-                -->
-            </div>
-        </div>
-    </header>
+    <nav>
+      <div id="menu-hamburguer">
+        <input type="checkbox" name="checkbox-menu" id="checkbox-menu" onclick="isChecked()">
+        <label for="checkbox-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="src/views/adote.html">Adote</a></li>
+        <li><a href="src/views/perdidos-e-achados.html">Perdidos e Achados</a></li>
+        <li><a href="src/views/doacao.html">Doação</a></li>
+        <li><a href="src/views/quem-somos.html">Quem Somos</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <section class="s-hero">
-        <div class="container">
-            <div class="wrapper">
-                <div class="banner">
-                    <img src="./assets/bg-title-perdidosachados2.jpg" alt="">
-                </div>
-                <div class="area-pets">
-                    <div>
-                        <h1>Perdidos</h1>
-                    </div>
-                    <div class="area-pets-row">
-                        <div>
-                            <img src="./assets/perdidos/perdido1.png" alt="" />
-                            <p>Nome: Mel</p>
-                            <p>Sexo: Femea</p>
-                            <p>Tamanho: Médio</p>
-                            <p>Idade: 1 Anos</p>
-                        </div>
-                        <div>
-                            <img src="./assets/perdidos/perdido2.png" alt="" />
-                            <p>Nome: Max</p>
-                            <p>Sexo: Macho</p>
-                            <p>Tamanho: Médio</p>
-                            <p>Idade: 2 Anos</p>
-                        </div>
-                        <div>
-                            <img src="./assets/perdidos/perdido3.png" alt="" />
-                            <p>Nome: Pingo</p>
-                            <p>Sexo: Macho</p>
-                            <p>Tamanho: Pequeno</p>
-                            <p>Idade: 6 Meses</p>
-                        </div>
-                    </div>
-                    <div class="area-pets-row">
-                        <div>
-                            <img src="./assets/perdidos/perdido4.png" alt="" />
-                            <p>Nome: Mel</p>
-                            <p>Sexo: Femea</p>
-                            <p>Tamanho: Médio</p>
-                            <p>Idade: 1 Anos</p>
-                        </div>
-                        <div>
-                            <img src="./assets/perdidos/perdido5.png" alt="" />
-                            <p>Nome: Max</p>
-                            <p>Sexo: Macho</p>
-                            <p>Tamanho: Médio</p>
-                            <p>Idade: 2 Anos</p>
-                        </div>
-                        <div>
-                            <img src="./assets/perdidos/perdido6.png" alt="" />
-                            <p>Nome: Pingo</p>
-                            <p>Sexo: Macho</p>
-                            <p>Tamanho: Pequeno</p>
-                            <p>Idade: 6 Meses</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="area-pets">
-                <div>
-                    <h1>Achados</h1>
-                </div>
-                <div class="area-pets-row">
-                    <div>
-                        <img src="./assets/achados/achado1.png" alt="" />
-                        <p>Nome: Mel</p>
-                        <p>Sexo: Femea</p>
-                        <p>Tamanho: Médio</p>
-                        <p>Idade: 1 Anos</p>
-                    </div>
-                    <div>
-                        <img src="./assets/achados/achado2.png" alt="" />
-                        <p>Nome: Max</p>
-                        <p>Sexo: Macho</p>
-                        <p>Tamanho: Médio</p>
-                        <p>Idade: 2 Anos</p>
-                    </div>
-                    <div>
-                        <img src="./assets/achados/achado3.png" alt="" />
-                        <p>Nome: Pingo</p>
-                        <p>Sexo: Macho</p>
-                        <p>Tamanho: Pequeno</p>
-                        <p>Idade: 6 Meses</p>
-                    </div>
-                </div>
-                <div class="area-pets-row">
-                    <div>
-                        <img src="./assets/achados/achado4.png" alt="" />
-                        <p>Nome: Mel</p>
-                        <p>Sexo: Femea</p>
-                        <p>Tamanho: Médio</p>
-                        <p>Idade: 1 Anos</p>
-                    </div>
-                    <div>
-                        <img src="./assets/achados/achado5.png" alt="" />
-                        <p>Nome: Max</p>
-                        <p>Sexo: Macho</p>
-                        <p>Tamanho: Médio</p>
-                        <p>Idade: 2 Anos</p>
-                    </div>
-                    <div>
-                        <img src="./assets/achados/achado6.png" alt="" />
-                        <p>Nome: Pingo</p>
-                        <p>Sexo: Macho</p>
-                        <p>Tamanho: Pequeno</p>
-                        <p>Idade: 6 Meses</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
+  <main>
+    <section>
+      <img src="src/img/banner-home.jpg" alt="Banner do Site">
     </section>
 
-    <footer>
-        <div class="container">
-            <div class="wrapper">
-                <div>
-                    <img src="./assets/logo-footer.png" />
-                </div>
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="">Home</a>
-                            </li>
-                            <li>
-                                <a href="">Adote</a>
-                            </li>
-                            <li>
-                                <a href="">Doação</a>
-                            </li>
-                            <li>
-                                <a href="">Perdidos e Achados</a>
-                            </li>
-                            <li>
-                                <a href="">Quem Somos</a>
-                            </li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-        <div id="copyright-top" class="wrapper">
-            <div>
-                <p>&copy; Copyright - Projeto Integrador - Grupo 6</p>
-            </div>
-            <div >
-                <a href="#header">Voltar para o topo <img src="./assets/pra-cima.png" alt=""></a>
-            </div>
-        </div>
-</footer>
+    <section class="content-home">
+      <h3><a href="src/views/adote.html">Adotar</a></h3>
+      <ul>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+      </ul>
+    </section>
 
+    <section class="content-home">
+      <h3><a href="src/views/perdidos-e-achados.html">Perdidos</a></h3>
+      <ul>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+      </ul>
+    </section>
+
+    <section class="content-home">
+      <h3><a href="src/views/perdidos-e-achados.html">Achados</a></h3>
+      <ul>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer">
+      <img src="src/img/logo-footer.png" alt="logo Instituto LAVHEC rodapé">
+      
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <div>
+            <li><a href="#header">Home</a></li>
+            <li><a href="src/views/adote.html">Adote</a></li>
+            <li><a href="src/views/perdidos-e-achados.html">Perdidos e Achados</a></li>
+          </div>
+          <div>
+            <li><a href="src/views/doacao.html">Doação</a></li>
+            <li><a href="src/views/quem-somos.html">Quem Somos</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+      
+    <div id="credits">
+      <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank" rel="noopener noreferrer">&copy; Copyright - Projeto Integrador - Grupo 6</a>
+      <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
+    </div>
+  </footer>
 </body>
 </html>
