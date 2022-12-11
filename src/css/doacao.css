@@ -1,5 +1,41 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
-
 h2{
+    margin-top: 40px;
+    border: 20px 30px 40px 60px;
+}
+.kit{
+    font-size: 38px;
+    margin: 50px 90px 50px 90px;
+    border: 7px ridge #B65826;
+    border-radius: 5px;
+}
+.kitgeral{
+    display: flex;
+    gap: 20px;
+
+}
+.texto1{
+    margin-top: 40px;
+    text-align: center;
+
+}
+.texto2{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.linkmain{
+    border: solid #348588;
+    background-color: #348588;
+    border-radius: 10px;
+    margin-top: 70px;
+    margin-left: 100px;
+    margin-right: 100px;
     color: white;
+    padding: 5px 20px 5px 20px;
+}
+.outrogeral{
+    display: flex;
+    gap: 50px;
+}
+#texto{
+    font-size: 40px;
 }
