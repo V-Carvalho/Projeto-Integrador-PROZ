@@ -1,28 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
 h2{
     margin-top: 40px;
     border: 20px 30px 40px 60px;
+    font-family: 'Inter', sans-serif;
 }
 .kit{
     font-size: 38px;
     margin: 50px 90px 50px 90px;
     border: 7px ridge #B65826;
     border-radius: 5px;
+    font-family: 'Inter', sans-serif;
 }
 .kitgeral{
     display: flex;
     gap: 20px;
+    max-width: 8000px;
+    font-family: 'Inter', sans-serif;
 
 }
 .texto1{
     margin-top: 40px;
     text-align: center;
+    font-family: 'Inter', sans-serif;
 
 }
 .texto2{
     text-align: center;
     margin-bottom: 40px;
+    font-family: 'Inter', sans-serif;
 }
-.linkmain{
+.botao{
     border: solid #348588;
     background-color: #348588;
     border-radius: 10px;
@@ -31,11 +39,51 @@ h2{
     margin-right: 100px;
     color: white;
     padding: 5px 20px 5px 20px;
+    font-family: 'Inter', sans-serif;
 }
 .outrogeral{
     display: flex;
-    gap: 50px;
+    gap: 150px;
+    margin-bottom: 30px;
+    margin-left: 10%;
+    font-family: 'Inter', sans-serif;
 }
 #texto{
     font-size: 40px;
+    font-family: 'Inter', sans-serif;
+}
+#coracao{
+    margin-left: 14%;
+}
+.formulario{
+    display: grid;
+    margin-top: 50px;
+    width: 500px;
+    height: 150px;
+    background-color: #27A8AD;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 40px;
+    font-family: 'Inter', sans-serif;
+}
+input{
+    border: 1px solid #27A8AD;
+    background-color: white;
+    margin: 10px 20px 10px 20px;
+    border-radius: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-family: 'Inter', sans-serif;
+}
+.botao2{
+    border: solid rgb(199, 66, 66);
+    background-color: rgb(199, 66, 66);
+    border-radius: 10px;
+    margin-left: 410px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    padding: 2px 5px 2px 5px;
+    font-family: 'Inter', sans-serif;
+
 }
