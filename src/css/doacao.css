@@ -87,3 +87,7 @@ input{
     font-family: 'Inter', sans-serif;
 
 }
+.botao2:hover{
+    padding: 3px 6px 3px 5px;
+    color: white;
+}
