@@ -3,8 +3,9 @@ API CATS = https://cataas.com/
 API DOGS = https://dog.ceo/dog-api/
 */
 
-let rawData = {};
-let animalData = [];
+modalBody = null;
+let rawData, animalData = [];
+let listContent, modalContent = null;
 
 async function loadData() {
   // Carregando o arquivo com os dados dos animais
@@ -20,12 +21,10 @@ function getAllAnimals() {
 
   for (let i = 0; i < animalData.length; i++) {
     // Criando o elemento que vai ser inserido na lista e atribuindo na variavel
-    let animal = document.createElement("li");
+    listContent = document.createElement("li");
 
-    /* Formatando o HTML que vai ser inserido na lista (ul)
-      A \ é usada para sair do template string 
-    */
-    animal.innerHTML = `<li class="item-list-animals" onclick="showModalAdoption(
+    // Formatando o HTML que vai ser inserido na lista (ul) a \ é usada para sair do template string    
+    listContent.innerHTML = `<li class="item-list-animals" onclick="showModalAdoption(
         \'${animalData[i]["animalPhotoUrl"]}\',
         \'${animalData[i]["animalName"]}\' 
       )">
@@ -43,16 +42,16 @@ function getAllAnimals() {
           </li>`;
 
     // Inserindo um animal na lista
-    document.getElementById("listAnimals").appendChild(animal);
+    document.getElementById("listAnimals").appendChild(listContent);
   }
 }
 
-async function getDataAnimalsFilteredSorted(type) {
+function getDataAnimalsFilteredSorted(type) {
   // Limpando a lista
   document.getElementById("listAnimals").innerHTML = "";
 
   // Filtrando e sorteando os dados q serão inseridos na lista
-  const filteredSortedData = await animalData
+  const filteredSortedData = animalData
     // Filtrando os animais conforme o tipo (gato ou cachorro)
     .filter((pet) => pet.tag == type)
     //Math.random() - 0.5 gera número aleatório que pode ser positivo ou negativo, então a função de classificação reordena os elementos aleatoriamente.
@@ -60,10 +59,10 @@ async function getDataAnimalsFilteredSorted(type) {
 
   for (let i = 0; i < filteredSortedData.length; i++) {
     // Criando o elemento que vai ser inserido na lista e atribuindo na variavel
-    let animal = document.createElement("li");
+    listContent = document.createElement("li");
 
     // Formatando o HTML que vai ser inserido na lista (ul)
-    animal.innerHTML = `<li class="item-list-animals" onclick="showModalAdoption(
+    listContent.innerHTML = `<li class="item-list-animals" onclick="showModalAdoption(
       \'${filteredSortedData[i]["animalPhotoUrl"]}\',
       \'${filteredSortedData[i]["animalName"]}\' 
     )">
@@ -81,39 +80,13 @@ async function getDataAnimalsFilteredSorted(type) {
           </li>`;
 
     // Inserindo um animal na lista
-    document.getElementById("listAnimals").appendChild(animal);
+    document.getElementById("listAnimals").appendChild(listContent);
   }
 }
 
-// function showModalAdoption(animalPhotoUrl, animalName) { 
-
-//   // Criando Elemento que representa o corpo do Modal
-//   let modal = document.getElementById("myModal");
-
-//   // // Criando o elemento que vai receber o conteúdo a ser inserido no corpo do Modal
-//   // let modalContent = document.createElement("modal");
-
-//   // // Formatando conteúdo a ser inserido no elemento
-//   // modalContent.innerHTML = `<div class="modal-content">
-//   //   <span class="close" onclick="closeModalAdoption()">&times;</span>
-//   //   <p>URL: ${animalPhotoUrl}</p>
-//   //   <p>Nome: ${animalName}</p>
-//   // </div>`;
-  
-
-//   // // Inserindo o conteudo no corpo do Modal
-//   // document.getElementById("myModal").appendChild(modalContent);
-
-//   // Alterando a renderização do Modal
-//   modal.style.display = "block";
-// }
-
-function showModalAdoption(animalPhotoUrl, animalName) { 
-  // Variavel que representa o corpo do Modal
-  let modalBody = document.getElementById("modalBody");
-
+function showModalAdoption(animalPhotoUrl, animalName) {
   // Variavel que vai receber o conteúdo a ser inserido no corpo do Modal
-  let modalContent = document.createElement("modalContent");
+  modalContent = document.createElement("div");
 
   // Formatando conteúdo a ser inserido no elemento
   modalContent.innerHTML = `<div class="modal-content">
@@ -123,7 +96,7 @@ function showModalAdoption(animalPhotoUrl, animalName) {
       </div>            
       <div id="modalContainerTitleHeader" class="modal-container-title-header">
         <p class="modal-title-header">
-          Você esta a um <b>CLICK</b> de formalizar o pedido de adoção do
+          Você esta a um <b>CLICK</b> de formalizar o pedido de adoção do(a)
           <b>${animalName}</b>!
         </p>
       </div>
@@ -159,19 +132,20 @@ function showModalAdoption(animalPhotoUrl, animalName) {
   // Inserindo o conteudo no corpo do Modal
   document.getElementById("modalBody").appendChild(modalContent);
 
+  // Variavel que representa o corpo do Modal
+  modalBody = document.getElementById("modalBody");
+
   // Alterando a renderização do Modal
   modalBody.style.display = "block";
 }
-
-
 
 function closeModalAdoption() {
   // Limpando o corpo do Modal
   document.getElementById("modalBody").innerHTML = "";  
 
   // Criando Elemento que representa o corpo do Modal
-  let modal = document.getElementById("modalBody");
+  modalBody = document.getElementById("modalBody");
 
   // Alterando a renderização do Modal
-  modal.style.display = "none";
+  modalBody.style.display = "none";
 }
