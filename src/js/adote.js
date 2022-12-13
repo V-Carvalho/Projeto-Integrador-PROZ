@@ -4,7 +4,8 @@ API DOGS = https://dog.ceo/dog-api/
 */
 
 modalBody = null;
-let rawData, animalData = [];
+let rawData = {};
+let animalData = [];
 let listContent, modalContent = null;
 
 async function loadData() {
