@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="src/css/header-footer.css">
   <link rel="stylesheet" href="src/css/style.css">
-  <script src="src/js/script.js"></script>
+  <script src="src/js/script.js" defer></script>
   <title>Instituto LAVHEC</title>
 </head>
 <body>
@@ -38,7 +38,14 @@
 
   <main>
     <section>
-      <img src="src/img/banner-home.jpg" alt="Banner do Site">
+      <a href="#" id="previous-banner" onclick="previousBanner()">&lt;</a>
+      <img src="src/img/banner-home-0.jpg" alt="Banner do Site" id="banner">
+      <a href="#" id="next-banner" onclick="nextBanner()">&gt;</a>
+      <div>
+        <span class="selected"></span>
+        <span class="selected"></span>
+        <span class="selected"></span>
+      </div>
     </section>
 
     <section class="content-home">

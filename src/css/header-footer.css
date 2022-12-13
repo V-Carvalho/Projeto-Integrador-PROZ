@@ -162,6 +162,7 @@ footer span:last-child {
         top: 280px;
         left: -1000px;
         transition: 0.3s ease-in-out;
+        z-index: 1;
     }
 
     header label {
