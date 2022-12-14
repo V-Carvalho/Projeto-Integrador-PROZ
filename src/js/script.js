@@ -71,11 +71,7 @@ function nextBanner() {
     banner = setInterval(() => document.body.onload = slide(), 3000)
 }
 
-//criando uma função para carregar as funções de subir para o topo da página
+//criando uma função para subir para o topo da página
 function toTop() {
-    const anchor = document.querySelectorAll('.go-top')
-    for (i = 0; i < anchor.length; i++) {
-        anchor[i].href = '#'
-    }
+    window.scrollTo(0, 0)
 }
-//carregando a função no atributo onload do body direto da html
