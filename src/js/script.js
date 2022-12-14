@@ -13,7 +13,7 @@ function isChecked() {
 //criando banner automático
 const imgBanner = document.getElementById('banner')
 let i = 1
-let ball = document.querySelector('.selected:nth-child(1)')
+let ball = document.querySelector('.selected')
 ball.style.background = '#B65826'
 
 function slide() {
@@ -42,7 +42,7 @@ function previousBanner() {
         ball.style.background = ''
         imgBanner.src = 'src/img/banner-home-2.jpg'
         i = 3
-        ball = document.querySelector('.selected:nth-child(3)')
+        ball = document.querySelector('.selected:last-child')
         ball.style.background = '#B65826'
     } else {
         ball.style.background = ''
