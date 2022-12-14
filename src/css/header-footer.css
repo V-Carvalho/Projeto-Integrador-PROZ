@@ -213,15 +213,11 @@ footer span:last-child {
 
 @media (max-width: 550px) {
     #logo img {
-        transform: scale(0.7);
+        width: 80%;
     }
 }
 
 @media (max-width: 400px) {
-    #logo img {
-        transform: scale(0.5);
-    }
-
     #footer {
         flex-direction: column;
         height: 100%;
