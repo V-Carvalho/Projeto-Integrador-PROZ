@@ -11,7 +11,6 @@ function isChecked() {
 }
 
 //criando banner automático
-const body = document.getElementsByTagName('body')[0]
 const imgBanner = document.getElementById('banner')
 let i = 1
 let ball = document.querySelector('.selected:nth-child(1)')
@@ -31,9 +30,9 @@ function slide() {
     }
 }
 
-let banner = setInterval(() => body.onload = slide(), 1000)
+let banner = setInterval(() => document.body.onload = slide(), 3000)
 
-//manipulando o banner manualmente
+//manipulando o banner manualmente, sem perder a contação automática
 const url = `${window.location.protocol}//${window.location.host}/`
 
 function previousBanner() {
@@ -54,7 +53,7 @@ function previousBanner() {
         ball.style.background = '#B65826'
     }
 
-    banner = setInterval(() => body.onload = slide(), 1000)
+    banner = setInterval(() => document.body.onload = slide(), 3000)
 }
 
 function nextBanner() {
@@ -69,5 +68,5 @@ function nextBanner() {
     ball = document.querySelector(`.selected:nth-child(${i})`)
     ball.style.background = '#B65826'
 
-    banner = setInterval(() => body.onload = slide(), 1000)
+    banner = setInterval(() => document.body.onload = slide(), 3000)
 }
