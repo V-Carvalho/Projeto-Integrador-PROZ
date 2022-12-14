@@ -1,10 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-h2{
-    margin-top: 40px;
-    border: 20px 30px 40px 60px;
+.container{
+    height: 300px;
+    margin-left: 10%;
+    position: relative;
+
+}
+.centro{
+    position: absolute;
+    top: 32%;
+    left: 14%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
     font-family: 'Inter', sans-serif;
 }
+#img01{
+    height: 300px;
+    max-width: 100%;
+}
+
 .kit{
     font-size: 38px;
     margin: 50px 90px 50px 90px;
@@ -17,6 +32,7 @@ h2{
     gap: 20px;
     max-width: 8000px;
     font-family: 'Inter', sans-serif;
+    margin-top: 2%;
 
 }
 .texto1{
@@ -44,8 +60,9 @@ h2{
 .outrogeral{
     display: flex;
     gap: 150px;
+    margin-top: 5%;
     margin-bottom: 30px;
-    margin-left: 10%;
+    margin-left: 15%;
     font-family: 'Inter', sans-serif;
 }
 #texto{
@@ -53,9 +70,14 @@ h2{
     font-family: 'Inter', sans-serif;
 }
 #coracao{
-    margin-left: 14%;
+    position: relative;
+    bottom: 210px;
+    left: 19%;
+
 }
 .formulario{
+    position: relative;
+    top: 50%;
     display: grid;
     margin-top: 50px;
     width: 500px;
