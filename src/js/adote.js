@@ -10,7 +10,7 @@ let listContent, modalContent = null;
 
 async function loadData() {
   // Carregando o arquivo com os dados dos animais
-  rawData = await fetch("../dao/data.json");
+  rawData = await fetch("../dao/db.json");
   animalData = await rawData.json();
 
   getAllAnimals();
