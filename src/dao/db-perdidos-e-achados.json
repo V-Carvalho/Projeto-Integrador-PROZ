@@ -1,0 +1,243 @@
+[
+  {
+    "animalName": "Thor",
+    "age": "1 Ano",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/hound-blood/n02088466_8105.jpg",
+    "status": "A"
+  },
+  {
+    "animalName": "Pantera",
+    "age": "3 Anos",
+    "gender": "Fêmea",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/buhund-norwegian/hakon2.jpg",
+    "status": "A"
+  },
+  {
+    "animalName": "Lupi",
+    "age": "5 Anos",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/eskimo/n02109961_16865.jpg",
+    "status": "A"
+  },
+  {
+    "animalName": "Simba",
+    "age": "3 Anos",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/terrier-sealyham/n02095889_2539.jpg",
+    "status": "A"
+  },
+  {
+    "animalName": "Nina",
+    "age": "6 Anos",
+    "gender": "Fêmea",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/mountain-bernese/n02107683_1460.jpg",
+    "status": "A"
+  },
+  {
+    "animalName": "Belinha",
+    "age": "4 Anos",
+    "gender": "Fêmea",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/keeshond/n02112350_7699.jpg",
+    "status": "A"
+  },
+  {
+    "animalName": "Tobias",
+    "age": "7 Meses",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/spaniel-cocker/n02102318_10261.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Buddy",
+    "age": "1 Ano",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/terrier-toy/n02087046_1386.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Max",
+    "age": "2 Anos",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/rottweiler/n02106550_12424.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Boris",
+    "age": "3 Anos",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/hound-basset/n02088238_2574.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Lilica",
+    "age": "1 Ano",
+    "gender": "Fêmea",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_3021.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Chanel",
+    "age": "1 Ano",
+    "gender": "Fêmea",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/terrier-tibetan/n02097474_4772.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Kiara",
+    "age": "3 Anos",
+    "gender": "Fêmea",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/terrier-yorkshire/n02094433_4710.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Aladdin",
+    "age": "2 Anos",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/segugio-italian/n02090722_002.jpg",
+    "status": "P"
+  },
+  {
+    "animalName": "Naruto",
+    "age": "4 Anos",
+    "gender": "Macho",
+    "tag": "dog",
+    "animalPhotoUrl": "https://images.dog.ceo/breeds/terrier-westhighland/n02098286_1591.jpg",
+    "status": "P"
+  },
+
+  {
+    "animalName": "Naruto",
+    "age": "1 Ano",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/wSnEqoPLDzQaSB5i",
+    "status": "A"
+  },
+  {
+    "animalName": "Selene",
+    "age": "7 Anos",
+    "gender": "Fêmea",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/OBtIiZ7KLDTuhsNn",
+    "status": "A"
+  },
+  {
+    "animalName": "Thor",
+    "age": "8 Meses",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/g2fCWbQCuhPXDAnI",
+    "status": "A"
+  },
+  {
+    "animalName": "Athos",
+    "age": "2 Anos",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/7QioAE7nClSGHqR8",
+    "status": "A"
+  },
+  {
+    "animalName": "Brutus",
+    "age": "3 Anos",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/TNNMAuiRdAgXyast",
+    "status": "A"
+  },
+  {
+    "animalName": "Agata",
+    "age": "5 Anos",
+    "gender": "Fêmea",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/jw7B8lQrPUZAHEy1",
+    "status": "A"
+  },
+  {
+    "animalName": "Helena",
+    "age": "1 Ano",
+    "gender": "Fêmea",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/DISxSIzkgfTSjQ6z",
+    "status": "A"
+  },
+  {
+    "animalName": "Zeus",
+    "age": "2 Anos",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/uN8cm3GBIyCZiDp6",
+    "status": "P"
+  },
+  {
+    "animalName": "Pedrita",
+    "age": "4 Meses",
+    "gender": "Fêmea",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/wlks23nkdd9nYr4N",
+    "status": "P"
+  },
+  {
+    "animalName": "Napoleão",
+    "age": "10 Anos",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/dBLlX9JyKpTwcH0L",
+    "status": "P"
+  },
+  {
+    "animalName": "Amora",
+    "age": "3 Anos",
+    "gender": "Fêmea",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/8z8BDoxNustOjbD5",
+    "status": "P"
+  },
+  {
+    "animalName": "Faísca",
+    "age": "4 Anos",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/AaZW1Brpa0MRnRn2",
+    "status": "P"
+  },
+  {
+    "animalName": "Espoleta",
+    "age": "8 Meses",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/jw5QDiEjvoUAKmHL",
+    "status": "P"
+  },
+  {
+    "animalName": "Fafá",
+    "age": "6 Anos",
+    "gender": "Fêmea",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/aBiCVkTdwrUngdWW",
+    "status": "P"
+  },
+  {
+    "animalName": "Dino",
+    "age": "3 Anos",
+    "gender": "Macho",
+    "tag": "cat",
+    "animalPhotoUrl": "https://cataas.com/cat/0PJwXcTrNzNIzGBJ",
+    "status": "P"
+  }
+]
