@@ -1,15 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
+.inicio{
+    display: flex;
+    gap: 120px;
+}
 .container{
     height: 300px;
     margin-left: 10%;
+    margin-top: 5%;
     position: relative;
 
 }
 .centro{
     position: absolute;
-    top: 32%;
-    left: 14%;
+    top: 34%;
+    left: 46%;
     font-size: 20px;
     text-align: center;
     line-height: 1;
@@ -20,6 +25,11 @@
     max-width: 100%;
 }
 
+#img02{
+    height: 300px;
+    max-width: 100%;
+    margin-top: 9%;
+}
 .kit{
     font-size: 38px;
     margin: 50px 90px 50px 90px;
