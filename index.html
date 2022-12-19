@@ -1,52 +1,170 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Quem Somos</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="estilo.css">
+  <title>Quem Somos</title>
 </head>
 <body>
-	<header>
-		<img src="src\img\b2.png"> <!--banner será aprimorado no css-->
-	    <nav>
-		    <h2>Menu</h2>
-				<ul><!--serão retiradas as bolinhas-->
-				  <li><a href="#">Home</a></li>
-				  <li><a href="#">Adote</a></li>
-				  <li><a href="#">Doação</a></li>
-				  <li><a href="#">Perdidos e Achados</a></li>
-				  <li><a href="#">Quem Somos</a></li>
-				</ul>
-		</nav>
-	    <img src="src\img\b4.png">
-    </header>
-    <main> <!--imagens e textos serão aprimorados no css-->
-    		<img src="src\img\f1.jpg">
-    		<h2>Intituto LAVHEC</h2>
-    		<p>O Instituto LAVEHC é uma ONG sem fins lucrativos,e que nasceu de um grande sonho de seus colaboradores:tirar o maior número possóvel de animais das ruas,dar tratamento adequado e integrá-los a familias que lhes deem amor,carinho e uma vida digna.</p>
-    		<hr>
-    		<p>Foi criada informalmente em 2005 na cidade de São Paulo.Atualmente a ONG mantém dois abrigos com 450 animais que são constantemente tratados por veterinários,alimentados com ração de boa qualidade,bebem água potável,dormem em abrigos especialmente constrídos e são tratados com muito amor e carinho por todos os funcionários e voluntários que estão sempre visitando as instituições onde ficam os cães.</p>
-    		<hr>
-    		<h2>Nosso Sítio</h2>
-    		<p>Localizado em Itapecerica da Serra-SP,em área de 20 mil metros quadrados,possui em sua estrutura grandes canis,muita área verde e espaço para atendimento veterinário emergencial.Estamos todos os dias de postas abertas para quem quiser nos visitar.
-    		Atendemos também em nosso sítio escolas e empresas.
-    	    </p>
-    	    <img src="src\img\f2.jpg">
-    </main>
-    <footer>
-	    <nav><!--Logo e barra do rodapé serão aprimorados no css-->
-	      <h2>Menu</h2>
-	      <ul><!--serão retiradas as bolinhas e o menu ficará á direita no rodapé-->
-	        <li><a href="#">Home</a></li>
-	        <li><a href="#">Adote</a></li>
-	        <li><a href="#">Doação</a></li>
-	        <li><a href="#">Perdidos e Achados</a></li>
-	        <li><a href="#">Quem Somos</a></li>
-	      </ul>
-	    </nav>
-	    <div>
-	      <a href="">Voltar para o topo</a>
-	    </div>
-    </footer>
+  <header id="header">
+    <h1>Instituto LAVHEC</h1>
+    <div>
+      <img src="src/img/logo.png" alt="logo Instituto LAVHEC">
+    </div>
+
+    <nav>
+      <h2>Menu</h2>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="src/views/adote.html">Adote</a></li>
+        <li><a href="src/views/perdidos-e-achados.html">Perdidos e Achados</a></li>
+        <li><a href="src/views/doacao.html">Doação</a></li>
+        <li><a href="src/views/quem-somos.html">Quem Somos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+      <img src="src/img/banner-home.jpg" alt="Banner do Site">
+      <br>
+     <div class="container">
+        <img width="800" height="350"  src="img\f1.jpg" alt="">
+       <br>
+       <br>
+        <article class="texto1">
+          <h2 > INSTITUTO LAVHEC </h2>
+          <br>
+          <p>O <strong> Instituto LAVHEC </strong> é uma ONG sem fins lucrativos,e que nasceu de um grande sonho de seus colaboradores: tirar o maior número possível de animais das ruas,dar tratamento adequado e integrá-los a famílias que lhes deem amor,carinho e uma vida digna.
+          </p>
+          <br>
+          <br>
+          <p> Foi criada informalmente em 2005 na cidade de São Paulo. Seu estatuto foi lançado e registrado em 23 de Abril de 2008, mesmo dia em que obteve seu CNPJ.
+          Atualmente a ONG mantém 2 abrigos (a sede fica em Itapecerica da Serra, SP) com 450 animais que são constantemente tratados por veterinários, alimentados com ração de boa qualidade,
+          bebem água potável, dormem em abrigos especialmente construídos e são tratados com muito amor e carinho por todos os funcionários e voluntários que estão sempre visitando as instalações onde ficam os cães.
+          </p>
+          <br>
+          <br>
+          <p>
+          Sua equipe é formada por Presidente, Diretores e 26 funcionários entre tratadores, veterinários, auxiliares de veterinária, equipe do Bazar, equipe de resgate e pessoal do escritório.
+          </p>
+        </article>
+      </div>
+      <br>
+      <br>
+      <hr>
+      <br>
+      <br>
+      <div class="container">
+        <article class="texto2">
+          <p><h2>NOSSO SÍTIO</h2></p>
+          <br>
+          <p>
+          Localizado em Itapecerica da Serra, SP, em área de 20 mil metros quadrados, possui em sua estrutura grandes canis, espaço para atendimento veterinário emergencial, depósitos, casas de caseiros, área de internação e isolamento e muito, mas muito verde.
+          </p>
+          <br>
+          <p>
+          Todo o sistema de fossa é séptico e é limpo de 15 em 15 dias por empresas especializadas nesse tipo de serviço.
+          </p>
+          <br>
+          <p>
+          Estamos todos os dias de portas abertas para quem quiser nos visitar, bastando informar data de preferência através do e-mail: faleconosco@caosemdono.com.br, oportunidade em que encaminharemos endereço completo.
+          </p>
+          <br>
+          <p>
+          Atendemos em nosso sítio escolas e empresas.
+          </p>
+        </article>
+           <img width="800" height="350" src="img\f3.jpg" alt="">
+      </div>
+        <br>
+        <br>
+        <hr>
+        <br>
+        <br>
+      <div class="container">
+        <img width="800" height="350"  src="img\f2.jpg" alt="">
+        <article>
+          <h2>ÁREA DE ATUAÇÃO</h2>
+          <br>
+          <p>
+          A ONG Cão Sem Dono atua em toda a cidade de Itapecerica da Serra, em São Paulo (capital) e região metropolitana. Também tem forte atuação em Pouso Alegre (MG) e cidades da região sul de Minas Gerais.
+          </p>
+          <br>
+          <p>
+          Atuamos em outras localidades após estudo de viabilidade por parte de nossa equipe de especialistas.
+          </p>
+          <br>
+          <p>
+          <strong>Áreas de desastres:</strong> Nossa equipe é especializada em atuar em tragédias onde são exigidos resgates de grandes proporções, com montagem de material de campanha e cercados, captação e transporte de alimentos para animais e presença de veterinários.
+          </p>
+          <br>
+          <p>
+          <strong> Mutirões:</strong> Realizamos anualmente diversos mutirões de castração e atendimento veterinário gratuito, bem como campanhas de conscientização.
+          </p>
+        </article>
+      </div>
+
+        
+      </div>
+      </div>
+
+    </section>
+
+    <section>
+      <h3><a href="src/views/adote.html">Adotar</a></h3>
+      <ul> <!--No CSS vou tirar as bolinhas e deixar elas alinhada em uma linha só-->
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3><a href="src/views/perdidos-e-achados.html">Perdidos</a></h3>
+      <ul> <!--No CSS vou tirar as bolinhas e deixar elas alinhada em uma linha só-->
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+      </ul>
+    </section>
+
+    <section>
+      <h3><a href="src/views/perdidos-e-achados.html">Achados</a></h3>
+      <ul> <!--No CSS vou tirar as bolinhas e deixar elas alinhada em uma linha só-->
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+        <li><a href="#"><img src="src/img/cachorro-independente-1.jpg" alt="protótipo"></a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <div id="footer">
+      <img src="src/img/logo-footer.png" alt="logo Instituto LAVHEC rodapé">
+      
+      <nav>
+        <h2>Menu</h2>
+        <ul>
+          <div>
+            <li><a href="#header">Home</a></li>
+            <li><a href="src/views/adote.html">Adote</a></li>
+            <li><a href="src/views/perdidos-e-achados.html">Perdidos e Achados</a></li>
+          </div>
+          <div>
+            <li><a href="src/views/doacao.html">Doação</a></li>
+            <li><a href="src/views/quem-somos.html">Quem Somos</a></li>
+          </div>
+        </ul>
+      </nav>
+    </div>
+      
+    <div id="credits">
+      <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank">&copy; Copyright - Projeto Integrador - Grupo 6</a>
+      <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
+    </div>
+  </footer>
 </body>
 </html>

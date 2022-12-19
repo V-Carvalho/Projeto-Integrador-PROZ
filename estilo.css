@@ -1,0 +1,49 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.baner1{
+  margin: 10;
+}
+
+
+.logo{
+ height:1300;
+ width: 500;
+}
+
+ul{
+	list-style: none;
+	background: #27a8ad;
+	padding: 0;
+	height: 1330;
+	text-align: center;
+	padding-bottom: 15px;
+    font-size: 25pt;
+
+}
+li{
+	display: inline;
+	word-spacing: 70px
+}
+
+.container{
+	padding: 10px;
+	margin-right: 10px;
+	display: flex
+}
+
+.imagem2{
+	float: left;
+	align-self: left;
+}
+.texto1{
+	font-size: 17px;
+}
+
+.texto2{
+	font-size: 17px;
+}
+.texto3{
+	font-size: 17px;
+}
