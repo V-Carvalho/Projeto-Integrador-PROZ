@@ -35,9 +35,9 @@ function getAllAnimals() {
                 class="animal-picture"
               />
               <div class="animal-details">
-                <h4><b>${animalData[i]["animalName"]}</b></h4>
-                <p>${animalData[i]["age"]}</p>
-                <p>${animalData[i]["gender"]}</p>
+                <p>Nome: <b>${animalData[i]["animalName"]}</b></p>
+                <p>Idade: ${animalData[i]["age"]}</p>
+                <p>Sexo: ${animalData[i]["gender"]}</p>
               </div>
             </div>
           </li>`;
@@ -73,9 +73,9 @@ function getDataAnimalsFilteredSorted(type) {
                 class="animal-picture"
               />
               <div class="animal-details">
-                <h4><b>${filteredSortedData[i]["animalName"]}</b></h4>
-                <p>${filteredSortedData[i]["age"]}</p>
-                <p>${filteredSortedData[i]["gender"]}</p>
+                <p>Nome: <b>${filteredSortedData[i]["animalName"]}</b></p>
+                <p>Idade: ${filteredSortedData[i]["age"]}</p>
+                <p>Sexo: ${filteredSortedData[i]["gender"]}</p>
               </div>
             </div>
           </li>`;
