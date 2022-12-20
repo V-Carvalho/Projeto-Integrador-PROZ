@@ -124,8 +124,8 @@ function showModalAdoption(animalPhotoUrl, animalName, animalTag, animalStatus, 
         <label class="label-form" for="userName">Nome:</label>
         <input class="input-form-get-data" type="text" id="userName" name="userName"/>
         
-        <label class="label-form" for="userTelefone">Telefone:</label>
-        <input class="input-form-get-data" type="text" id="userName" name="userTelefone"/>
+        <!--<label class="label-form" for="userTelefone">Telefone:</label>
+        <input class="input-form-get-data" type="text" id="userName" name="userTelefone"/>-->
         
         <label class="label-form" for="userEmail">E-mail:</label>
         <input class="input-form-get-data" type="email" id="userEmail" name="userEmail"/>
