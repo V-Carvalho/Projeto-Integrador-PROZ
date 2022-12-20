@@ -1,8 +1,3 @@
-/*
-API CATS = https://cataas.com/
-API DOGS = https://dog.ceo/dog-api/
-*/
-
 modalBody = null;
 let rawData = {};
 let animalData = [];
