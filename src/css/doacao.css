@@ -1,0 +1,136 @@
+#title-page {
+    background: url("/src/img/bg-title-adote.jpg") rgba(0, 0, 0, 0.3);
+    background-repeat: repeat;
+    background-blend-mode: multiply;
+    color: white;
+    font-size: xx-large;
+    height: 129px;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+
+.inicio{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 1rem;
+}
+.container{
+    height: 300px;
+    position: relative;
+
+}
+.centro{
+    position: absolute;
+    top: 34%;
+    left: 46%;
+    font-size: 20px;
+    text-align: center;
+    line-height: 1;
+}
+#img01{
+    height: 300px;
+    max-width: 100%;
+}
+
+#img02{
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.7);
+}
+.kit{
+    font-size: 38px;
+    border: 7px ridge #B65826;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem 0;
+    height: 200px;
+    width: 380px;
+}
+
+.kitgeral{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 3rem;
+
+}
+.texto1{
+    text-align: center;
+
+}
+.texto2{
+    text-align: center;
+}
+.botao{
+    background-color: #348588;
+    border-radius: 10px;
+    margin-top: 175px;
+    color: white;
+    padding: 7px 20px;
+    position: absolute;
+}
+
+.outrogeral{
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 1rem 0;
+    align-items: center;
+}
+
+#coracao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+#texto{
+    font-size: 40px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 230px;
+    background-color: #27A8AD;
+    padding: 20px 0 15px 10px;
+    border-radius: 10px;
+}
+.cx-texto {
+    border: 2px solid #27A8AD;
+    margin: 10px 20px;
+    border-radius: 10px;
+    padding: 10px 0 10px 10px;
+    outline: none;
+    transition: 0.2s;
+}
+
+.cx-texto:focus {
+    border: 2px solid #B65826;
+}
+
+.botao2{
+    border: none;
+    background-color: rgb(199, 66, 66);
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    align-self: flex-end;
+    width: 100px;
+    height: 50px;
+    margin: 15px 20px 0 0;
+    transition: 0.2s;
+}
+
+.botao2:hover {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.botao2:active {
+    transform: scale(1.2);
+}

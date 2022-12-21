@@ -13,13 +13,22 @@ h1, header h2 {
     display: none;
 }
 
-header div {
+#logo {
     height: 220px;
     display: flex;
     align-items: center;
     background: rgba(0, 0, 0, 0.3) url("/src/img/bg-header.jpg") center 80%;
     background-size: cover;
     background-blend-mode: multiply;
+}
+
+#checkbox-menu {
+    position: absolute;
+    opacity: 0;
+}
+
+header label {
+    display: none;
 }
 
 header ul {
@@ -105,4 +114,132 @@ footer ul div {
 
 footer span:last-child {
     font-size: xx-large;
+}
+
+@media (max-width: 900px) {
+    footer ul {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+
+    header a:hover, footer a:hover {
+        color: white;
+    }
+
+    main a:hover {
+        color: black;
+    }
+}
+
+@media (max-width: 750px) {
+    #logo {
+        justify-content: center;
+    }
+
+    #footer img {
+        width: 50%;
+    }
+}
+
+@media (max-width: 650px) {
+    header nav {
+        background: #27A8AD;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    header h2 {
+        display: block;
+        color: white;
+    }
+
+    header ul {
+        display: block;
+        position: absolute;
+        top: 280px;
+        left: -1000px;
+        transition: 0.3s ease-in-out;
+        z-index: 1;
+    }
+
+    header label {
+        cursor: pointer;
+        display: flex;
+        height: 22px;
+        width: 30px;
+        position: relative;
+    }
+    
+    header span {
+        height: 5px;
+        width: 100%;
+        border-radius: 30px;
+        background: white;
+        transition: 0.25s ease-in-out;
+        position: absolute;
+    }
+    
+    header span:nth-child(2) {
+        margin-top: 8px;
+    }
+    
+    header span:nth-child(3) {
+        margin-top: 16px;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(1) {
+        transform: rotate(-45deg);
+        margin-top: 8px;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(2) {
+        opacity: 0;
+    }
+    
+    #checkbox-menu:checked + label span:nth-child(3) {
+        transform: rotate(45deg);
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    #credits {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+}
+
+@media (max-width: 550px) {
+    #logo img {
+        width: 80%;
+    }
+}
+
+@media (max-width: 400px) {
+    #footer {
+        flex-direction: column;
+        height: 100%;
+        padding: 1rem 0;
+        gap: 2.5rem;
+    }
+
+    footer nav {
+        align-items: center;
+    }
+
+    footer ul div {
+        align-items: center;
+    }
+
+    #credits a {
+        font-size: small;
+    }
+}
+
+@media (max-width: 350px) {
+    #credits a {
+        font-size: x-small;
+    }
 }

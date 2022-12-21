@@ -4,22 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/header-footer.css">
+    <link rel="stylesheet" href="/src/css/header-footer.css" />
+    <link rel="stylesheet" href="/src/css/adote.css" />
+    <script src="/src/js/script.js" defer></script>
     <title>Adote - Instituto LAVHEC</title>
   </head>
-  <body>
-    <header id="header">
+  <body onload="loadData()">
+    <header>
       <h1>Instituto LAVHEC</h1>
-      <div>
-        <img src="/src/img/logo.png" alt="logo Instituto LAVHEC">
+      <div id="logo">
+        <img src="/src/img/logo.png" alt="logo Instituto LAVHEC" />
       </div>
-  
+
       <nav>
+        <div id="menu-hamburguer">
+          <input type="checkbox" name="checkbox-menu" id="checkbox-menu" onclick="isChecked()">
+          <label for="checkbox-menu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
         <h2>Menu</h2>
         <ul>
           <li><a href="/">Home</a></li>
-          <li><a href="#" class="current-page">Adote</a></li>
-          <li><a href="/src/views/perdidos-e-achados.html">Perdidos e Achados</a></li>
+          <li><a href="##" class="current-page">Adote</a></li>
+          <li>
+            <a href="/src/views/perdidos-e-achados.html">Perdidos e Achados</a>
+          </li>
           <li><a href="/src/views/doacao.html">Doação</a></li>
           <li><a href="/src/views/quem-somos.html">Quem Somos</a></li>
         </ul>
@@ -27,73 +39,56 @@
     </header>
 
     <main>
-      <img
-        src="/src/img/bg-title-adote.jpg"
-        alt="Fundo do título da página"
-        width="500"
-      />      
-
-      <section>
-        <h2>Cachorros e Gatos para adoção</h2>
-        
-        <label for="pets">Filtar por:</label>
-        <select name="pets" id="pets">
-          <option value="cachorros">Cachorros</option>
-          <option value="gatos">gatos</option>
-        </select>
+      <section class="banner-page-title">
+        <h3>Cachorros e Gatos para Adoção!</h3>
       </section>
 
-      <section>
-        <img
-          src="/src/img/pet1.jpg"
-          alt="Detalhes do animal"
-          width="300"
-          height="300"
-        />
-        <p>Nome: Mel</p>
-        <p>Sexo: Femea</p>
-        <p>Tamanho: Médio</p>
-        <p>Idade: 1 Anos</p>
+      <section class="filter-animal-type">
+        <div class="filter-animal-type-text">
+          <h5>Filtrar Por:</h5>
+        </div>
+        <div class="filter-animal-type-buttons">
+          <button class="btn-all-animals" onclick="getAllAnimals()">
+            Mostar Todos
+          </button>
+          <button class="btn" onclick="getDataAnimalsFilteredSorted('dog')">
+            Cachorros
+          </button>
+          <button class="btn" onclick="getDataAnimalsFilteredSorted('cat')">
+            Gatos
+          </button>
+        </div>
       </section>
 
-      <section>
-        <img
-          src="/src/img/pet2.jpg"
-          alt="Detalhes do animal"
-          width="300"
-          height="300"
-        />
-        <p>Nome: Max</p>
-        <p>Sexo: Macho</p>
-        <p>Tamanho: Médio</p>
-        <p>Idade: 2 Anos</p>
+      <section class="animals-main-content">
+        <ul id="listAnimals" class="list-animals">
+          <!-- Os itens da lista serão adicionados via JS -->
+        </ul>
       </section>
 
-      <section>
-        <img
-          src="/src/img/pet3.jpg"
-          alt="Detalhes do animal"
-          width="300"
-          height="300"
-        />
-        <p>Nome: Pingo</p>
-        <p>Sexo: Macho</p>
-        <p>Tamanho: Pequeno</p>
-        <p>Idade: 6 Meses</p>
+      <section id="modalBody" class="modal">
+        <!-- O conteudo do Modal será inserido via JS -->        
       </section>
     </main>
 
     <footer>
       <div id="footer">
-        <img src="/src/img/logo-footer.png" alt="logo Instituto LAVHEC rodapé">
-        
+        <img
+          src="/src/img/logo-footer.png"
+          alt="logo Instituto LAVHEC rodapé"
+        />
+
         <nav>
           <h2>Menu</h2>
           <ul>
             <div>
               <li><a href="/">Home</a></li>
-              <li><a href="#header">Adote</a></li>
-              <li><a href="/src/views/perdidos-e-achados.html">Perdidos e Achados</a></li>
+              <li><a href="##" onclick="toTop()">Adote</a></li>
+              <li>
+                <a href="/src/views/perdidos-e-achados.html"
+                  >Perdidos e Achados</a
+                >
+              </li>
             </div>
             <div>
               <li><a href="/src/views/doacao.html">Doação</a></li>
@@ -102,11 +97,17 @@
           </ul>
         </nav>
       </div>
-        
+
       <div id="credits">
-        <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank">&copy; Copyright - Projeto Integrador - Grupo 6</a>
-        <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
+        <a
+          href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ"
+          target="_blank"
+          >&copy; Copyright - Projeto Integrador - Grupo 6</a
+        >
+        <a href="##" onclick="toTop()"><span>Voltar para o topo</span><span>&uarr;</span></a>
       </div>
     </footer>
+
+    <script src="../js/adote.js" defer></script>
   </body>
 </html>

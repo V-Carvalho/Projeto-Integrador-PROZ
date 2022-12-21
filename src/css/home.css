@@ -1,0 +1,159 @@
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+section:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+section:first-child div {
+    display: flex;
+    position: absolute;
+    margin-top: 300px;
+    gap: 3rem;
+}
+
+section:first-child div span {
+    width: 15px;
+    height: 15px;
+    border-radius: 30px;
+    border: 3px solid white;
+}
+
+#previous-banner, #next-banner {
+    position: absolute;
+    padding: 0 0.6rem 5px 0.5rem;
+    background: #B65826;
+    font-size: xx-large;
+    border-radius: 30px;
+    color: white;
+}
+
+#previous-banner:hover, #next-banner:hover {
+    color: #348588;
+}
+
+#previous-banner {
+    align-self: flex-start;
+    margin-left: 1rem;
+}
+
+#next-banner {
+    align-self: flex-end;
+    margin-right: 1rem;
+}
+
+h3 {
+    border-bottom: 2px solid;
+    margin-bottom: 1rem;
+    font-size: x-large;
+}
+
+h3 a {
+    color: black;
+}
+
+main ul {
+    display: flex;
+    gap: 5rem;
+}
+
+@media (max-width: 1000px) {
+    section:first-child {
+        width: 95%;
+    }
+    section:first-child div {
+        margin-top: 30%;
+    }
+
+    section:first-child img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 950px) {
+    .content-home {
+        margin: 0 1rem;
+    }
+
+    main ul {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 750px) {
+    section:first-child div {
+        transform: scale(0.7);
+    }
+}
+
+@media (max-width: 650px) {
+    #previous-banner:hover, #next-banner:hover {
+        color: white;
+    }
+
+    .content-home {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+        height: fit-content;
+    }
+
+    h3 {
+        width: 100%;
+        text-align: center;
+    }
+    
+    main ul {
+        display: block;
+        width: 95%;
+    }
+
+    main li:nth-child(1), main li:nth-child(2) {
+        margin-bottom: 1rem;
+    }
+
+    .content-home img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 550px) {
+    section:first-child div {
+        transform: scale(0.5);
+    }
+}
+
+@media (max-width: 500px) {
+    #previous-banner {
+        font-size: x-large;
+        margin-left: 0.5rem;
+    }
+
+    #next-banner {
+        font-size: x-large;
+        margin-right: 0.5rem;
+    }
+}
+
+@media (max-width: 400px) {
+    #previous-banner {
+        font-size: large;
+        margin-left: 0.2rem;
+    }
+
+    #next-banner {
+        font-size: large;
+        margin-right: 0.2rem;
+    }
+
+    section:first-child div {
+        transform: scale(0.3);
+    }
+}
