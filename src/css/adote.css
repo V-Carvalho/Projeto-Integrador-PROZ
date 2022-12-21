@@ -11,18 +11,19 @@ main {
 .banner-page-title {
   display: flex;
   flex: content;
+  font-size: xx-large;
   max-height: 120px;
   min-height: 120px;   
   align-items: center;
-  background-size: contain;
+  background-repeat: repeat;
   background-blend-mode: color-dodge;
   background:rgba(0, 0, 0, 0.3)
-  url("/src/img/bg-title-adote.jpg") 100%;
+  url("/src/img/bg-title-adote.jpg");
 }
 
 h3 {
   color: #FFFFFF;
-  margin: 0px 50px;
+  margin-left: 1rem;
 }
 
 .page-subtitle {  
