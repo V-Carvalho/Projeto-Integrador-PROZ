@@ -2,7 +2,7 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 1rem 1rem 0;
+    padding: 0 1rem;
     gap: 1rem;
 }
 
@@ -21,11 +21,13 @@ main {
 
 article {
     display: flex;
-    gap: 1rem;
+    gap: 2rem;
 }
 
 article img {
     width: 385px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.7);
 }
 
 article section {

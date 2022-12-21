@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/header-footer.css">
-    <script src="/src/js/script.js"></script>
+    <link rel="stylesheet" href="../css/header-footer.css">
+    <link rel="stylesheet" href="../css/perdidos-e-achados.css">
+    <script src="../js/script.js" defer></script>
+    <script src="../js/perdidos-e-achados.js" defer></script>
     <title>Perdidos e Achados - Instituto LAVHEC</title>
   </head>
-  <body>
+  <body onload="loadData()">
     <header id="header">
       <h1>Instituto LAVHEC</h1>
       <div id="logo">
@@ -28,65 +30,34 @@
         <ul>
           <li><a href="/">Home</a></li>
           <li><a href="/src/views/adote.html">Adote</a></li>
-          <li><a href="#" class="current-page">Perdidos e Achados</a></li>
+          <li><a href="##" class="current-page">Perdidos e Achados</a></li>
           <li><a href="/src/views/doacao.html">Doação</a></li>
           <li><a href="/src/views/quem-somos.html">Quem Somos</a></li>
         </ul>
       </nav>
     </header>
-  
+    
     <main>
-      <img src="/src/img/bg-title-perdidosachados.jpg"/>
-      
-      <section>
+      <h2 class="banner">Perdidos e Achados</h2>
+
+      <section class="animals-main-content">
         <h3>Perdidos</h3>
-        <div>
-          <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="200" />
-          <p>Nome: Mel</p>
-          <p>Sexo: Femea</p>
-          <p>Tamanho: Médio</p>
-          <p>Idade: 1 Anos</p>
-        </div>
-        <div>
-          <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="200" />
-          <p>Nome: Max</p>
-          <p>Sexo: Macho</p>
-          <p>Tamanho: Médio</p>
-          <p>Idade: 2 Anos</p>
-        </div>
-        <div>
-          <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="200" />
-          <p>Nome: Pingo</p>
-          <p>Sexo: Macho</p>
-          <p>Tamanho: Pequeno</p>
-          <p>Idade: 6 Meses</p>
-        </div>
+        <ul id="listPerdidos" class="list-animals">
+          <!-- Os itens da lista serão adicionados via JS -->
+        </ul>
       </section>
   
-      <section>
+      <section class="animals-main-content">
         <h3>Achados</h3>
-        <div>
-          <img src="/src/img/pet1.jpg" alt="Detalhes do animal" width="200" />
-          <p>Nome: Mel</p>
-          <p>Sexo: Femea</p>
-          <p>Tamanho: Médio</p>
-          <p>Idade: 1 Anos</p>
-        </div>
-        <div>
-          <img src="/src/img/pet2.jpg" alt="Detalhes do animal" width="200" />
-          <p>Nome: Max</p>
-          <p>Sexo: Macho</p>
-          <p>Tamanho: Médio</p>
-          <p>Idade: 2 Anos</p>
-        </div>
-        <div>
-          <img src="/src/img/pet3.jpg" alt="Detalhes do animal" width="200" />
-          <p>Nome: Pingo</p>
-          <p>Sexo: Macho</p>
-          <p>Tamanho: Pequeno</p>
-          <p>Idade: 6 Meses</p>
-        </div>
+        <ul id="listAchados" class="list-animals">
+          <!-- Os itens da lista serão adicionados via JS -->
+        </ul>
       </section>
+
+      <section id="modalBody" class="modal">
+        <!-- O conteudo do Modal será inserido via JS -->        
+      </section>
+
     </main>
   
     <footer>
@@ -99,7 +70,7 @@
             <div>
               <li><a href="/">Home</a></li>
               <li><a href="/src/views/adote.html">Adote</a></li>
-              <li><a href="#header">Perdidos e Achados</a></li>
+              <li><a href="##" onclick="toTop()">Perdidos e Achados</a></li>
             </div>
             <div>
               <li><a href="/src/views/doacao.html">Doação</a></li>
@@ -111,7 +82,7 @@
         
       <div id="credits">
         <a href="https://github.com/V-Carvalho/Projeto-Integrador-PROZ" target="_blank">&copy; Copyright - Projeto Integrador - Grupo 6</a>
-        <a href="#header"><span>Voltar para o topo</span><span>&uarr;</span></a>
+        <a href="##" onclick="toTop()"><span>Voltar para o topo</span><span>&uarr;</span></a>
       </div>
     </footer>
   </body>
