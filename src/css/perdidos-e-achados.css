@@ -1,26 +1,36 @@
 main {
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 1rem;
-  margin: 0 2rem 0 2rem;
-  padding: 0;
+  padding: 0 1rem;
+  margin: 0 2rem;
 }
 
+h3 {
+  margin: 0 1rem 1rem;
+  border-bottom: 2px solid;
+  font-size: x-large;
+}
+
+h3 a {
+  color: black;
+}
+
+main ul {
+  display: flex;
+  gap: 5rem;
+}
 .banner {
-  background: url("/src/img/bg-title-perdidosachados.jpg") rgba(0, 0, 0, 0.2);
+  background: url("/src/img/bg-title-perdidosachados.jpg") rgba(0, 0, 0, 0.3);
   background-repeat: repeat;
   background-blend-mode: multiply;
   color: white;
-  font-size:x-large;
-  width: 100%;
-  height: 129px;
+  font-size: xx-large;
+  height: 128px;
   display: flex;
   align-items: center;
-}
-
-.banner h2 {
-  padding-left: 2rem;
+  margin: 0 -3rem;
+  padding-left: 3rem;
 }
 
 .animals-main-content {
@@ -242,5 +252,51 @@ main {
   .modal-content {
     width: 350px;
   }
+
+  section:first-child {
+    display: flex;
+    justify-content: center;
+  }
+
+  section:first-child img{
+    width: 95%;
+  }
+}
   
+@media (max-width: 950px) {
+  .content-home {
+      margin: 0 1rem;
+  }
+
+  main ul {
+      flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 650px) {
+  .content-home {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      height: fit-content;
+  }
+
+  h3 {
+      width: 100%;
+      text-align: center;
+  }
+  
+  main ul {
+      display: block;
+      width: 95%;
+  }
+
+  main li:nth-child(1), main li:nth-child(2) {
+      margin-bottom: 1rem;
+  }
+
+  .content-home img {
+      width: 100%;
+  }
 }
